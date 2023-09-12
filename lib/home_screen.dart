@@ -5,26 +5,31 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return    Scaffold(
-      body: SafeArea(
-         child: Column(
-          children: [
-            const Text('heh'),
-            IconButton(
-                onPressed: (){
+    return Scaffold(
+      backgroundColor: Colors.brown[900],
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: SafeArea(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              IconButton(
+                onPressed: () {
                   Navigator.pop(context);
                 },
-                icon: const Icon(Icons.ice_skating),
-
-
-            ),
-          ],
-
+                icon: const Icon(
+                  Icons.arrow_back,
+                  color: Colors.white,
+                ),
+              ),
+              const CircleAvatar(
+                backgroundImage: AssetImage('assets/image.jpg'),
+                radius: 20,
+              )
+            ],
+          ),
         ),
-
       ),
-
-          
     );
   }
 }

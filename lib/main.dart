@@ -27,7 +27,7 @@ class SplashScreen extends StatelessWidget {
                 'Coffee so good, your taste buds will love it.',
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 40.0,
+                  fontSize: 35.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -50,7 +50,7 @@ class SplashScreen extends StatelessWidget {
                         40.0, 15.0, 40.0, 15.0) // Background color
                     ),
                 label: const Text(
-                  'Get Started',
+                  'Get Started ',
                   style: TextStyle(
                     fontSize: 20.0,
                   ),
