@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               width: double.infinity,
-              height: 240,
+              height: 280,
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Column(
@@ -56,18 +56,18 @@ class HomeScreen extends StatelessWidget {
                       // crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
+                          padding: const EdgeInsets.all(5),
                           decoration: BoxDecoration(
                               color: Colors.white,
-                              borderRadius: BorderRadius.circular(20)),
+                              borderRadius: BorderRadius.circular(6)),
                           child: const TextField(
                             // controller: _searchController,
                             decoration: InputDecoration(
-                                labelText: 'Search',
                                 hintText: 'Search...',
                                 prefixIcon: Icon(
                                   Icons.search,
                                   color: Colors.black,
-                                  size: 20,
+                                  size: 25,
                                 ),
                                 border: InputBorder.none),
                           ),
@@ -75,6 +75,24 @@ class HomeScreen extends StatelessWidget {
                       ],
                     )
                   ],
+                ),
+              ),
+            ),
+            Positioned(
+              top: 200, // Adjust the position of the rectangle
+              left: 30, // Adjust the position of the rectangle
+              child: Container(
+                color: Colors.red,
+                width: 320,
+                height: 180,
+                child: const Center(
+                  child: Text(
+                    'Overlay',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                    ),
+                  ),
                 ),
               ),
             ),
