@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mydemo/list_menu.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -12,7 +13,7 @@ class HomeScreen extends StatelessWidget {
         child: Stack(
           children: [
             Container(
-              color: const Color(0xFFF9F9F9), // First color
+              color: const Color.fromARGB(255, 240, 240, 240), // First color
               width: double.infinity,
               height: double.infinity,
             ),
@@ -52,8 +53,6 @@ class HomeScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 20.0),
                     Column(
-                      // mainAxisAlignment: MainAxisAlignment.start,
-                      // crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
                           padding: const EdgeInsets.all(2),
@@ -76,7 +75,8 @@ class HomeScreen extends StatelessWidget {
                           ),
                         ),
                       ],
-                    )
+                    ),
+                    const ListMenu(),
                   ],
                 ),
               ),
