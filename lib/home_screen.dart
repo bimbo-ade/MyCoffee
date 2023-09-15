@@ -56,9 +56,9 @@ class HomeScreen extends StatelessWidget {
                       // crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          padding: const EdgeInsets.all(5),
+                          padding: const EdgeInsets.all(2),
                           decoration: BoxDecoration(
-                              color: Colors.white,
+                              color: const Color.fromARGB(255, 61, 61, 61),
                               borderRadius: BorderRadius.circular(6)),
                           child: const TextField(
                             // controller: _searchController,
@@ -66,7 +66,7 @@ class HomeScreen extends StatelessWidget {
                                 hintText: 'Search...',
                                 prefixIcon: Icon(
                                   Icons.search,
-                                  color: Colors.black,
+                                  color: Colors.white,
                                   size: 25,
                                 ),
                                 border: InputBorder.none),
@@ -80,18 +80,15 @@ class HomeScreen extends StatelessWidget {
             ),
             Positioned(
               top: 200, // Adjust the position of the rectangle
-              left: 30, // Adjust the position of the rectangle
+              left: 37, // Adjust the position of the rectangle
               child: Container(
-                color: Colors.red,
                 width: 320,
                 height: 180,
-                child: const Center(
-                  child: Text(
-                    'Overlay',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
-                    ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  image: const DecorationImage(
+                    image: AssetImage('assets/promo.png'),
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),
