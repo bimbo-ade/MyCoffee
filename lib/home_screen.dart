@@ -58,7 +58,7 @@ class HomeScreen extends StatelessWidget {
                         Container(
                           padding: const EdgeInsets.all(2),
                           decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 54, 54, 54),
+                              color: const Color.fromARGB(255, 54, 54, 54),
                               borderRadius: BorderRadius.circular(6)),
                           child: const TextField(
                             // controller: _searchController,
