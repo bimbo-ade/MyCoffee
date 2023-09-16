@@ -62,7 +62,7 @@ class HomeScreen extends StatelessWidget {
                           child: const TextField(
                             // controller: _searchController,
                             decoration: InputDecoration(
-                                hintText: 'Search...',
+                                hintText: 'Search..',
                                 hintStyle: TextStyle(
                                   color: Color.fromARGB(255, 126, 126, 126),
                                 ),
