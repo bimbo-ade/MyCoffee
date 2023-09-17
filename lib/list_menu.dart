@@ -8,7 +8,12 @@ class ListMenu extends StatelessWidget {
     return const DefaultTabController(
       length: 9,
       child: TabBar(
-        isScrollable: true, // Enable scrolling for tabs.
+        isScrollable: true,
+        labelColor: Colors.red,
+        unselectedLabelColor: Colors.black,
+        indicator: UnderlineTabIndicator(
+            borderSide: BorderSide(color: Colors.red, width: 2)),
+        labelStyle: TextStyle(fontSize: 20),
         tabs: [
           Tab(text: 'Tab 1'),
           Tab(text: 'Tab 2'),
