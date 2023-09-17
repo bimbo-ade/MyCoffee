@@ -5,9 +5,23 @@ class ListMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text(
-      'listed',
-      style: TextStyle(fontSize: 30, color: Colors.red),
+    return const DefaultTabController(
+      length: 9,
+      child: TabBar(
+        isScrollable: true, // Enable scrolling for tabs.
+        tabs: [
+          Tab(text: 'Tab 1'),
+          Tab(text: 'Tab 2'),
+          Tab(text: 'Tab 3'),
+          Tab(text: 'Tab 1'),
+          Tab(text: 'Tab 2'),
+          Tab(text: 'Tab 3'),
+          Tab(text: 'Tab 1'),
+          Tab(text: 'Tab 2'),
+          Tab(text: 'Tab 3'),
+          // Add more tabs as needed.
+        ],
+      ),
     );
   }
 }
