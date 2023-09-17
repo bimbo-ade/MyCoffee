@@ -13,6 +13,7 @@ class HomeScreen extends StatelessWidget {
         child: Stack(
           children: [
             Container(
+              //bg color underneath
               color: const Color.fromARGB(255, 240, 240, 240), // First color
               width: double.infinity,
               height: double.infinity,
@@ -76,14 +77,13 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const ListMenu(),
                   ],
                 ),
               ),
             ),
             Positioned(
-              top: 200, // Adjust the position of the rectangle
-              left: 37, // Adjust the position of the rectangle
+              top: 200,
+              left: 37,
               child: Container(
                 width: 320,
                 height: 180,
@@ -96,6 +96,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
+            const Positioned(top: 400, left: 20, child: ListMenu()),
           ],
         ),
       ),
