@@ -27,7 +27,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               width: double.infinity,
-              height: 280,
+              height: 250,
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Column(
@@ -82,11 +82,11 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 200,
-              left: 37,
+              top: 180,
+              left: 26,
               child: Container(
-                width: 320,
-                height: 180,
+                width: 340,
+                height: 140,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   image: const DecorationImage(
@@ -94,9 +94,15 @@ class HomeScreen extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
                 ),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.black.withOpacity(0.3),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
               ),
             ),
-            const Positioned(top: 400, left: 20, child: ListMenu()),
+            const Positioned(top: 350, left: 26, child: ListMenu()),
           ],
         ),
       ),
