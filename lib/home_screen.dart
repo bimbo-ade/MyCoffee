@@ -102,7 +102,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-            const Positioned(top: 360, left: 2, child: ListMenu()),
+            const Positioned(top: 360, child: ListMenu()),
           ],
         ),
       ),
