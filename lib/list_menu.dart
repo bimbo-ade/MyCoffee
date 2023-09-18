@@ -21,10 +21,16 @@ class ListMenu extends StatelessWidget {
           Tab(text: 'Espresso'),
           Tab(text: 'Americano'),
           Tab(text: 'Black Coffee'),
-
-          // Add more tabs as needed.
         ],
       ),
+      // TabBarView(children: [
+      //   Text(' Hot Coffee'),
+      //   Text(' Cappuccino'),
+      //   Text(' Latte'),
+      //   Text('Espresso'),
+      //   Text('Americano'),
+      //   Text('Black Coffee'),
+      // ],)
     );
   }
 }
