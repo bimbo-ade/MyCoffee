@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mydemo/menu_list.dart';
 
-class ListMenu extends StatelessWidget {
-  const ListMenu({super.key});
+class TabsIndicator extends StatelessWidget {
+  const TabsIndicator({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,11 +12,11 @@ class ListMenu extends StatelessWidget {
         children: [
           TabBar(
             isScrollable: true,
-            labelColor: Color.fromARGB(255, 170, 170, 170),
+            labelColor: Color.fromARGB(255, 146, 146, 146),
             unselectedLabelColor: Color.fromARGB(255, 105, 105, 105),
             indicator: UnderlineTabIndicator(
                 borderSide: BorderSide(
-                    color: Color.fromARGB(255, 192, 192, 192), width: 2)),
+                    color: Color.fromARGB(255, 146, 146, 146), width: 2)),
             labelStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             tabs: [
               Tab(text: ' Hot Coffee'),
@@ -32,7 +33,7 @@ class ListMenu extends StatelessWidget {
           Expanded(
             child: TabBarView(
               children: [
-                Text(' Hot Coffee'),
+                const MenuList(),
                 Text(' Cappuccino'),
                 Text(' Latte'),
                 Text('Espresso'),

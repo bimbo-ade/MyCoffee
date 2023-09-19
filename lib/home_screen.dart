@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mydemo/list_menu.dart';
+import 'package:mydemo/tab_indicator.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Container(
-          color: const Color.fromARGB(255, 20, 20, 20),
+          color: const Color.fromARGB(255, 23, 23, 23),
           width: double.infinity,
           height: double.infinity,
           child: Column(
@@ -86,7 +86,7 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              const Expanded(child: ListMenu()),
+              const Expanded(child: TabsIndicator()),
             ],
           ),
         ),
