@@ -14,7 +14,8 @@ class ListMenu extends StatelessWidget {
             labelColor: Color.fromARGB(255, 170, 170, 170),
             unselectedLabelColor: Color.fromARGB(255, 105, 105, 105),
             indicator: UnderlineTabIndicator(
-                borderSide: BorderSide(color: Color(0xFF230C02), width: 2)),
+                borderSide: BorderSide(
+                    color: Color.fromARGB(255, 192, 192, 192), width: 2)),
             labelStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             tabs: [
               Tab(text: ' Hot Coffee'),
@@ -25,7 +26,10 @@ class ListMenu extends StatelessWidget {
               Tab(text: 'Black Coffee'),
             ],
           ),
-          const Expanded(
+          SizedBox(
+            height: 20,
+          ),
+          Expanded(
             child: TabBarView(
               children: [
                 Text(' Hot Coffee'),
