@@ -72,22 +72,25 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
-                width: 340,
-                height: 140,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  image: const DecorationImage(
-                    image: AssetImage('assets/promo.png'),
-                    fit: BoxFit.cover,
-                  ),
-                ),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.3),
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                ),
+              // Container(
+              //   width: 340,
+              //   height: 140,
+              //   decoration: BoxDecoration(
+              //     borderRadius: BorderRadius.circular(20),
+              //     image: const DecorationImage(
+              //       image: AssetImage('assets/promo.png'),
+              //       fit: BoxFit.cover,
+              //     ),
+              //   ),
+              //   child: Container(
+              //     decoration: BoxDecoration(
+              //       color: Colors.black.withOpacity(0.3),
+              //       borderRadius: BorderRadius.circular(20),
+              //     ),
+              //   ),
+              // ),
+              const SizedBox(
+                height: 20,
               ),
               const Expanded(child: ListMenu()),
             ],
