@@ -9,13 +9,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [Color(0xFF131313), Color(0xFF2C2C2C)],
-            ),
-          ),
+          color: const Color.fromARGB(255, 20, 20, 20),
           width: double.infinity,
           height: double.infinity,
           child: Column(
