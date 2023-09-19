@@ -4,31 +4,23 @@ import 'package:mydemo/list_menu.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
-  // final TextEditingController _searchController = TextEditingController();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Stack(
-          children: [
-            Container(
-              //bg color underneath
-              color: const Color.fromARGB(255, 240, 240, 240), // First color
-              width: double.infinity,
-              height: double.infinity,
+        child: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [Color(0xFF131313), Color(0xFF2C2C2C)],
             ),
-            Container(
-              decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors: [Color(0xFF131313), Color(0xFF2C2C2C)],
-                ),
-              ),
-              width: double.infinity,
-              height: 250,
-              child: Padding(
+          ),
+          width: double.infinity,
+          height: double.infinity,
+          child: Column(
+            children: [
+              Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -80,11 +72,7 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
               ),
-            ),
-            Positioned(
-              top: 180,
-              left: 26,
-              child: Container(
+              Container(
                 width: 340,
                 height: 140,
                 decoration: BoxDecoration(
@@ -101,9 +89,9 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-            ),
-            const Positioned(top: 360, child: ListMenu()),
-          ],
+              const Expanded(child: ListMenu()),
+            ],
+          ),
         ),
       ),
     );
