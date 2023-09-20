@@ -20,7 +20,7 @@ class MenuList extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const Text('image'),
+              const Icon(Icons.favorite),
               const SizedBox(
                 width: 20,
               ),
@@ -41,6 +41,17 @@ class MenuList extends StatelessWidget {
                   const Text('fghj'),
                 ],
               ),
+              const Expanded(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Icon(Icons.keyboard_arrow_right_rounded),
+                  ],
+                ),
+              ),
+            const  SizedBox(
+                width: 10,
+              )
             ],
           ),
         );
