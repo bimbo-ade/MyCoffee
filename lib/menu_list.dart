@@ -21,10 +21,11 @@ class MenuList extends StatelessWidget {
           ),
           margin: const EdgeInsets.all(8.0),
           padding: const EdgeInsets.all(12.0),
-          child: Row(
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const Icon(Icons.favorite),
+              Image.asset('assets/promo.png'),
+              // fit: BoxFit.cover,
               const SizedBox(
                 width: 20,
               ),
