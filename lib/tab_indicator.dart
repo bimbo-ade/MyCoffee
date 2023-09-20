@@ -33,7 +33,7 @@ class TabsIndicator extends StatelessWidget {
           Expanded(
             child: TabBarView(
               children: [
-                const MenuList(),
+                MenuList(),
                 Text(' Cappuccino'),
                 Text(' Latte'),
                 Text('Espresso'),

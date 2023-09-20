@@ -5,9 +5,22 @@ class MenuList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text(
-      'hellocccccccccccccccccccccc',
-      style: TextStyle(color: Colors.white),
+    return ListView(
+      children: [
+        ListTile(
+          leading: Icon(Icons.star),
+          title: Text('Item 1'),
+        ),
+        ListTile(
+          leading: Icon(Icons.star),
+          title: Text('Item 2'),
+        ),
+        ListTile(
+          leading: Icon(Icons.star),
+          title: Text('Item 3'),
+        ),
+        // Add more list items as needed
+      ],
     );
   }
 }
