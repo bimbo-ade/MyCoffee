@@ -6,7 +6,10 @@ class MenuList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
+    return GridView.builder(
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2, // Number of columns
+      ),
       padding: const EdgeInsets.all(8),
       itemCount: items.length,
       itemBuilder: (context, index) {
@@ -49,7 +52,7 @@ class MenuList extends StatelessWidget {
                   ],
                 ),
               ),
-            const  SizedBox(
+              const SizedBox(
                 width: 10,
               )
             ],
