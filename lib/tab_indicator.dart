@@ -6,11 +6,11 @@ class TabsIndicator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const DefaultTabController(
+    return DefaultTabController(
       length: 6,
       child: Column(
         children: [
-          TabBar(
+          const TabBar(
             isScrollable: true,
             labelColor: Color.fromARGB(255, 146, 146, 146),
             unselectedLabelColor: Color.fromARGB(255, 105, 105, 105),
@@ -27,7 +27,7 @@ class TabsIndicator extends StatelessWidget {
               Tab(text: 'Black Coffee'),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Expanded(

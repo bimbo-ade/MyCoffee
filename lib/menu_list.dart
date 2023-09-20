@@ -1,26 +1,19 @@
 import 'package:flutter/material.dart';
 
 class MenuList extends StatelessWidget {
-  const MenuList({super.key});
+  MenuList({super.key});
+  final List<String> items = List.generate(20, (index) => 'Item $index');
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: [
-        ListTile(
-          leading: Icon(Icons.star),
-          title: Text('Item 1'),
-        ),
-        ListTile(
-          leading: Icon(Icons.star),
-          title: Text('Item 2'),
-        ),
-        ListTile(
-          leading: Icon(Icons.star),
-          title: Text('Item 3'),
-        ),
-        // Add more list items as needed
-      ],
+    return ListView.builder(
+      itemCount: items.length,
+      itemBuilder: (context, index) {
+        return ListTile(
+          leading: const Icon(Icons.dangerous),
+          title: Text(items[index]),
+        );
+      },
     );
   }
 }
