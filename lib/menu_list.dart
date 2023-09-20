@@ -8,7 +8,8 @@ class MenuList extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.builder(
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2, // Number of columns
+        crossAxisCount: 2,
+        childAspectRatio: 0.7,
       ),
       padding: const EdgeInsets.all(8),
       itemCount: items.length,
